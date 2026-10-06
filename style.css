@@ -1,9 +1,25 @@
+:root {
+    /* https://coolors.co/041b15-f4d35e-51344d-dbe4ee-4b88a2 */
+    --primary-text: #041b15ff;
+    --accent-color: #f4d35eff;
+    --border-color: #51344dff;
+    --primary-bg: #dbe4eeff;
+    --secondary-bg: #4b88a2ff;
+}
+
+
+
+
 body {
     font-family: Tahoma;
 }
 h1 {
-    color: darkslategray;
+    color: var(--border-color);
 }
 h2{
-    color: darkseagreen;
+    color: var(--accent-color);
+}
+p {
+    font-size: 1.4em;
+    line-height: 1.4;
 }
