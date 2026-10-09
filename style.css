@@ -7,19 +7,143 @@
     --secondary-bg: #4b88a2ff;
 }
 
-
-
-
 body {
-    font-family: Tahoma;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 1em;
 }
+
+header {
+    margin-bottom: 1.5em;
+    background-color: var(--secondary-bg);
+    border: 2px solid var(--border-color);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+header img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5em;
+    height: 5em;
+    border: 3px solid var(--border-color);
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.25em;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.25em;
+    background-color: var(--accent-color);
+    color: var(--primary-text);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: var(--primary-bg);
+}
+
+section {
+    margin-bottom: 1.25em;
+    padding: 1em 1.25em;
+    border-left: 4px solid var(--border-color);
+}
+
+#projects {
+    background-color: var(--secondary-bg);
+    border-radius: 0.5em;
+}
+
 h1 {
-    color: var(--border-color);
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    line-height: 1.25;
 }
-h2{
-    color: var(--accent-color);
+
+h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0.25em;
+    background-color: var(--accent-color);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    line-height: 1.25;
 }
+
+h3 {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
 p {
-    font-size: 1.4em;
-    line-height: 1.4;
+    margin: 0 0 1em;
+}
+
+a {
+    color: var(--border-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+#projects a {
+    color: var(--primary-text);
+}
+
+main img {
+    display: block;
+    width: 16em;
+    height: auto;
+    margin: 1.5em;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5em;
+}
+
+article {
+    padding: 1em;
+    background-color: var(--primary-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5em;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 1.5em;
+    padding-top: 1em;
+    border-top: 2px solid var(--border-color);
+    font-size: 1em;
+    text-align: center;
 }
