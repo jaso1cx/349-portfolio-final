@@ -6,6 +6,12 @@ function dayAndNight() {
 }
 
 window.onload = function() {
+
+    const siteFade = sal({
+        threshold: 0.05,
+        once: true
+    })
+
     const switchMode = document.getElementById('switchClick');
 
     switchMode.addEventListener("click", (event) => {
