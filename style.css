@@ -2,9 +2,21 @@
     /* https://coolors.co/041b15-f4d35e-51344d-dbe4ee-4b88a2 */
     --primary-text: #041b15ff;
     --accent-color: #f4d35eff;
+    --accent-text: #041b15ff;
     --border-color: #51344dff;
     --primary-bg: #dbe4eeff;
     --secondary-bg: #4b88a2ff;
+    --top-nav-bg: #dbe4eeff;
+}
+
+:root.dark-mode {
+    --primary-text: #f1f5f2ff;
+    --accent-color: #f4d35eff;
+    --accent-text: #041b15ff;
+    --border-color: #a78ba3ff;
+    --primary-bg: #121a18ff;
+    --secondary-bg: #243c44ff;
+    --top-nav-bg: #f1f5f2ff;
 }
 
 body {
@@ -82,7 +94,18 @@ nav a {
     display: inline-block;
     padding: 0.25em;
     background-color: var(--accent-color);
-    color: var(--primary-text);
+    color: var(--accent-text);
+    border: 2px solid var(--border-color);
+    border-radius: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+nav button {
+    display:inline-block;
+    padding: 0.25em;
+    background-color: var(--accent-color);
+    color: var(--accent-text);
     border: 2px solid var(--border-color);
     border-radius: 0.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -90,8 +113,9 @@ nav a {
 }
 
 nav a:hover,
+nav button:hover,
 nav a:focus-visible {
-    background-color: var(--primary-bg);
+    background-color: var(--top-nav-bg);
 }
 
 section {
@@ -164,6 +188,7 @@ h2 {
     padding: 0.25em;
     background-color: var(--accent-color);
     border: 2px solid var(--border-color);
+    color: var(--accent-text);
     border-radius: 0.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
